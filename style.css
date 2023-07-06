@@ -1,3 +1,12 @@
 /* 
-    
+    Theme Name: Presley's Parcels
+    Author: Adam Roesner
+    Author URI: https://www.adamaroesner.com
+    Description: Presley's Parcels is a theme developed for Presley, an style influencer and entrepreneur
+    Version: 1.0
+    Text Domain: Presley's Parcels
 */
+
+body {
+    background-color: blue;
+}
