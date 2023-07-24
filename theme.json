@@ -1,5 +1,123 @@
 {
     "$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
-    "title": "Presley's Parcles"
+    "title": "Presley's Parcles",
+    "settings": {
+        "appearanceTools": true,
+        "layout": {
+            "contentSize": "1000px",
+            "wideSize": "1643px"
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "background",
+                    "color": "#FAF4F0",
+                    "name": "Background"
+                },
+                {
+                    "slug": "contrast",
+                    "color": "#F7F7F7",
+                    "name": "Contrast"
+                },
+                {
+                    "slug": "primary",
+                    "color": "#425F57",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#749F82",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "secondary-hover",
+                    "color": "#509265",
+                    "name": "Secondary Hover"
+                }
+
+            ]
+        },
+        "typography": {
+            "dropCap": false,
+            "fluid": true,
+            "fontFamilies": [
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "Merriweather",
+                            "fontStretch": "normal",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/Merriweather/Merriweather-Regular.woff2"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "\"Merriweather\", serif",
+                    "name": "Merriweather",
+                    "slug": "body"
+                },
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "Merriweather",
+                            "fontStretch": "normal",
+                            "fontStyle": "normal",
+                            "fontWeight": "700",
+                            "src": [
+                                "file:./assets/fonts/Merriweather/Merriweather-Bold.woff2"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "\"Merriweather\", serif",
+                    "name": "Merriweather",
+                    "slug": "heading"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "fluid": {
+                        "max": "1rem",
+                        "min": "0.875rem"
+                    },
+                    "name": "Small",
+                    "size": "1rem",
+                    "slug": "small"
+                },
+                {
+                    "fluid": {
+                        "max": "1.125rem",
+                        "min": "1rem"
+                    },
+                    "name": "Medium",
+                    "size": "1rem",
+                    "slug": "medium"
+                },
+                {
+                    "fluid": {
+                        "max": "1.874rem",
+                        "min": "1.75rem"
+                    },
+                    "name": "Large",
+                    "size": "1rem",
+                    "slug": "large"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--body)",
+            "lineHeight": "1.75",
+            "fontSize": "var(--wp--preset--font-size--medium)"
+        },
+        "elements": {
+            "heading": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--heading)"
+                }
+            }
+        }
+    }
 }
