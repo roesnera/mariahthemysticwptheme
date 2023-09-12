@@ -6,4 +6,10 @@ if(!function_exists('mariahs_styles')) :
 endif;
 
 add_action('wp_enqueue_scripts', 'mariahs_styles');
+
+function features() {
+    register_nav_menu('siteNav', 'Main Menu');
+}
+
+add_action('after_setup_theme', 'features');
 ?>

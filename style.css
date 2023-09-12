@@ -7,6 +7,229 @@
     Text Domain: Mariah the Mystic
 */
 
+@font-face {
+    font-family: Beth Ellen;
+    src: url('./assets/fonts/Beth_Ellen/BethEllen-Regular.ttf');
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url('./assets/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Lacquer;
+    src: url('./assets/fonts/Lacquer/Lacquer-Regular.ttf');
+}
+
+html, * {
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --lr-gutter: 4rem;
+    --pink: #ddb4b8;
+    --green: #757D4B;
+}
+
 body {
-    background-color: blue;
+    position: relative;
+    padding: 0;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    max-width: 100rem;
+}
+
+.header {
+    position: relative;
+    /* min-height: 30vh; */
+    max-width: 100vw;
+    aspect-ratio: 16/9;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('./assets/images/Header.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Beth Ellen';
+    padding: 0 var(--lr-gutter);
+}
+
+.navigation--item[title="shop"] {
+    background: url('./assets/images/1.png');
+    width: 7rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="shop"]:active, .navigation--item[title="shop"]:visited, .navigation--item__active[title="shop"] {
+    background: url('./assets/images/2.png');
+    width: 7rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="blog"] {
+    background: url('./assets/images/3.png');
+    width: 7rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="blog"]:active, .navigation--item[title="blog"]:visited, .navigation--item__active[title="blog"] {
+    background: url('./assets/images/4.png');
+    width: 7rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="collab"] {
+    background: url('./assets/images/5.png');
+    width: 11.7rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="collab"]:active, .navigation--item[title="collab"]:visited, .navigation--item__active[title="collab"] {
+    background: url('./assets/images/6.png');
+    width: 11.7rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="portfolio"] {
+    background: url('./assets/images/7.png');
+    width: 13rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="portfolio"]:active, .navigation--item[title="portfolio"]:visited, .navigation--item__active[title="portfolio"] {
+    background: url('./assets/images/8.png');
+    width: 13rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="contact"] {
+    background: url('./assets/images/9.png');
+    width: 11.5rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item[title="contact"]:active, .navigation--item[title="contact"]:visited, .navigation--item__active[title="contact"] {
+    background: url('./assets/images/10.png');
+    width: 11.5rem;
+    height: 5.5rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation--item {
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    list-style: none;
+}
+
+.navigation--item__active {
+    list-style: none;
+}
+
+
+/* SHOP PAGE */
+
+.shop-page {
+    max-height: 300rem;
+}
+
+.items-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 var(--lr-gutter);
+}
+
+.item {
+    flex: 1 0 30%;
+    margin-bottom: 2rem;
+    min-width: 15rem;
+    max-width: 25rem;
+    border: 1px;
+    font-family: 'Lacquer';
+    font-size: 1.6rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.item-image {
+    aspect-ratio: 5 / 7;
+    width: 100%;
+    border: 1px dashed black;
+}
+
+.item-name {
+    text-align: center;
+}
+
+.item-price {
+    text-align: center;
+}
+
+.item-name, .item-price {
+    margin: 1rem 0;
+}
+
+/* BLOG PAGE */
+
+.blog-page {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--lr-gutter);
+}
+
+.blog-preview-container {
+    width: 100%;
+}
+
+.blog-preview--title {
+    font-family: 'Beth Ellen';
+}
+
+.blog-preview--date {
+    font-family: 'Lacquer';
+    margin-bottom: 1rem;
+}
+
+.blog-preview--image {
+    max-width: 100%;
+    border-radius: 1.4rem;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 10rem;
+    background: url('./assets/images/footer.png');
 }
