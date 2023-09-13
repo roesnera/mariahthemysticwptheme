@@ -41,6 +41,27 @@ body {
     max-width: 100rem;
 }
 
+
+/* UTILITIES */
+
+.section--heading {
+    font-family: 'Beth Ellen';
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+}
+
+main {
+    padding: 0 var(--lr-gutter);
+    overflow-x: hidden;
+}
+
+section {
+    margin: 4rem 0 4rem 0;
+}
+
+/* HEADER AND NAV */
+
+
 .header {
     position: relative;
     /* min-height: 30vh; */
@@ -51,6 +72,10 @@ body {
     background: url('./assets/images/Header.png');
     background-position: center;
     background-size: cover;
+}
+
+nav {
+    margin-bottom: 2rem;
 }
 
 .navigation {
@@ -226,6 +251,138 @@ body {
     max-width: 100%;
     border-radius: 1.4rem;
 }
+
+
+/* CONTACT PAGE */
+
+.lets-work-together-section {
+    min-height: 30vh;
+}
+
+.lets-heading--container .section--heading {
+    letter-spacing: 0.3rem;
+    flex: 1 1 80%;
+}
+
+.lets-heading--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: space-evenly; */
+}
+
+.squiggly {
+    /* background: url('./images/page_6_doodle-removebg-preview.png'); */
+    width: 60%;
+    aspect-ratio: 7/2.7;
+    background-position: center;
+    /* overflow-x: visible; */
+    transform: translateX(5rem);
+}
+
+.contact--container {
+    display: grid;
+    grid-template-columns: [start] 50% [midline] 50% [end];
+    --left-font-size: 3.5rem;
+}
+
+.contact-form--container-left {
+    font-family: 'Lacquer';
+    font-size: var(--left-font-size);
+}
+
+.smol {
+    font-size: .8em;
+}
+
+.right-arrow {
+
+}
+
+.contact-form {
+    border: 1px dashed black;
+}
+
+.style-bundle-section {
+    min-height: 40vh;
+}
+
+.style-bundle-section .section--heading {
+    height: fit-content;
+}
+
+.contact--bundle__left {
+    font-family: 'Lacquer', serif;
+    font-size: var(--left-font-size);
+}
+
+.contact--bundle__right {
+    border: 1px dashed black;
+}
+
+.section--standard-height {
+    min-height: 40vh;
+}
+
+.find-me-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+}
+
+.find-me-section .section--heading {
+    letter-spacing: .4rem;
+}
+
+.find--row {
+    width: 100%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.find--pic {
+    min-width: 20%;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    aspect-ratio: 1/1;
+}
+
+.find--insta__pic {
+    /* background: url('./images/'); */
+}
+
+.find--tik-tok__pic {
+    /* background: url('./images/tiktok-removebg-preview.png'); */
+}
+
+.find--linkedin__pic {
+    /* background: url('./images/linkedin-removebg-preview.png'); */
+}
+
+.find--spotify__pic {
+    /* background: url('./images/spotify-removebg-preview.png'); */
+    /* background-position-x: 1rem; */
+    transform: translateX(1.3rem);
+}
+
+.find--row {
+    font-family: 'Lacquer', serif;
+    font-size: 4rem;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.find--linkedin__name, .find--spotify__name {
+    letter-spacing: .24rem;
+}
+
 
 /* FOOTER */
 

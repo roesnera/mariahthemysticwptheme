@@ -101,12 +101,12 @@ main {
 
 .section {
     /* min-height: 100vh; */
-    padding: .5rem var(--padding-horizontal);
+    /* padding: .5rem var(--padding-horizontal); */
 }
 
 .section-title {
     font-family: 'Beth Ellen';
-    color: var(--color-secondary);
+    /* color: var(--color-secondary); */
     font-size: var(--title-font-size);
 }
 
