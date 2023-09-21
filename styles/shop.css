@@ -1,0 +1,80 @@
+/* WOOCOMMERCE SHOP PAGE */
+
+ul[role="navigation"], ul[role="navigation"] > li > ul, #sidebar > ul {
+    list-style: none;
+}
+
+#sidebar {
+    flex: 1 1 auto;
+}
+
+.pagenav > * > .page_item:hover {
+    transform: scale(1.1) translateX(5%);
+}
+
+#primary {
+    flex: 3 1 auto
+}
+
+#primary #main {
+    padding: 0;
+}
+
+.products {
+    list-style: none;
+    display: grid;
+    grid-template-columns: [start] 33% [midline-1] 33% [midline-2] 33% [end];
+    row-gap: 2rem;
+}
+
+.product {
+    position: relative;
+    display: grid;
+    grid-template-columns: [start] 50% [midline] 50% [end];
+}
+
+
+
+.woocommerce-LoopProduct-link {
+    grid-column-start: start;
+    grid-column-end: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* isolation: isolate; */
+    text-decoration: none;
+    color: black;
+}
+
+.onsale {
+    position: absolute;
+    color: black;
+    left: 2.3rem;
+    font-size: 1.3em;
+    transform: rotateZ(-20deg);
+}
+
+.onsale::before {
+    content: '';
+    /* border: 1px solid black; */
+    display: block;
+    position: absolute;
+    background: red;
+    z-index: -1;
+    width: 130%;
+    height: 100%;
+    transform: translateX(-10%);
+}
+
+.product .button,.add_to_cart_button, .added_to_cart {
+    text-align: center;
+}
+
+.page-numbers {
+    display: flex;
+    flex-direction: row;
+}
+
+/* #sidebar > ul, .pagenav > ul, .categories > ul {
+    list-style: none;
+} */
