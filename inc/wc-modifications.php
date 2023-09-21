@@ -11,5 +11,3 @@ function new_loop_shop_per_page( $cols ) {
 
 return $cols;
 }
-
-?>
