@@ -23,6 +23,7 @@ ul[role="navigation"] > li > ul,
 }
 
 .products {
+  margin-top: 1.2rem;
   list-style: none;
   display: grid;
   grid-template-columns: [start] 33% [midline-1] 33% [midline-2] 33% [end];
@@ -49,6 +50,7 @@ ul[role="navigation"] > li > ul,
 .onsale {
   position: absolute;
   color: black;
+  top: 1rem;
   left: 2.3rem;
   font-size: 1.3em;
   transform: rotateZ(-20deg);
@@ -72,11 +74,30 @@ ul[role="navigation"] > li > ul,
   text-align: center;
 }
 
+nav.woocommerce-pagination {
+    display: grid;
+    justify-content: center;
+}
+
 .page-numbers {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul.page-numbers > * {
+    margin: 0 1rem;
+    border: 1px solid black;
+    padding: 0 .6rem;
+}
+
+ul.page-numbers > li::marker {
+    /* display: none; */
+    color: transparent;
 }
 
 /* #sidebar > ul, .pagenav > ul, .categories > ul {
     list-style: none;
 } */
+
+

@@ -1,3 +1,5 @@
+/* MAIN PRODUCT SECTION */
+
 a.woocommerce-product-gallery__trigger {
   display: none;
 }
@@ -54,7 +56,7 @@ input.qty {
 button.single_add_to_cart_button.button.alt {
   all: unset;
   font-family: "Beth Ellen", serif;
-  font-size: 4rem;
+  font-size: 2rem;
   padding: 0 0.6em 0.3em;
   border: 1px solid black;
   border-radius: 5px;
@@ -67,6 +69,8 @@ button.single_add_to_cart_button.button.alt:hover {
 #product-130 > div.summary.entry-summary > div.product_meta {
   display: none;
 }
+
+/* DESCRIPTION/ADDITIONAL INFO/REVIEWS SECTION */
 
 ul.tabs.wc-tabs > * {
   display: inline;
@@ -97,6 +101,8 @@ ul.tabs.wc-tabs > li > a {
   transform: translateY(-4px);
 }
 
+/* RELATED PRODUCTS SECTION */
+
 section.related.products > :not(:first-child) > * {
   margin: 0 1rem;
 }
@@ -108,6 +114,53 @@ section.related.products {
 
 .products {
   display: grid;
+  row-gap: 1rem;
   list-style: none;
   grid-template-columns: [start] 50% [midline] 50% [end];
 }
+
+
+
+li.product {
+    position: relative;
+    display: grid;
+    grid-template-columns: [start] 50% [midline] 50% [end];
+  }
+  
+  .woocommerce-LoopProduct-link {
+    grid-column-start: start;
+    grid-column-end: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* isolation: isolate; */
+    text-decoration: none;
+    color: black;
+  }
+  
+  li > a> span.onsale {
+    position: absolute;
+    color: white;
+    top: .3rem;
+    left: 2.3rem;
+    font-size: 1.3em;
+    transform: rotateZ(-20deg);
+  }
+  
+  li > a> span.onsale::before {
+    content: "";
+    /* border: 1px solid black; */
+    display: block;
+    position: absolute;
+    background: black;
+    z-index: -1;
+    width: 130%;
+    height: 100%;
+    transform: translateX(-10%);
+  }
+  
+  .product .button,
+  .add_to_cart_button,
+  .added_to_cart {
+    text-align: center;
+  }
