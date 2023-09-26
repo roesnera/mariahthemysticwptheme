@@ -6,16 +6,20 @@ if(!function_exists('mariahs_styles')) :
         wp_enqueue_style('mariahs-style', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css'));
     
         if(is_page('collab')) {
-            wp_enqueue_style('collab', get_template_directory_uri() . '/styles/collab.css', array(), filemtime( get_template_directory() . '/style.css'));
-            wp_enqueue_style('iphone', get_template_directory_uri() . '/styles/iphone.css', array(), filemtime( get_template_directory() . '/style.css'));
+            wp_enqueue_style('collab', get_template_directory_uri() . '/styles/collab.css', array(), filemtime( get_template_directory() . '/styles/collab.css'));
+            wp_enqueue_style('iphone', get_template_directory_uri() . '/styles/iphone.css', array(), filemtime( get_template_directory() . '/styles/iphone.css'));
         }
 
         if(is_shop() || is_product_category()){
-            wp_enqueue_style('shop', get_template_directory_uri() . '/styles/shop.css', array(), filemtime( get_template_directory() . '/style.css'));
+            wp_enqueue_style('shop', get_template_directory_uri() . '/styles/shop.css', array(), filemtime( get_template_directory() . '/styles/shop.css'));
         }
 
         if(is_product()){
-            wp_enqueue_style('product', get_template_directory_uri() . '/styles/product.css', array(), filemtime( get_template_directory() . '/style.css'));
+            wp_enqueue_style('product', get_template_directory_uri() . '/styles/product.css', array(), filemtime( get_template_directory() . '/styles/product.css'));
+        }
+
+        if(is_cart()){
+            wp_enqueue_style('cart', get_template_directory_uri() . '/styles/cart.css', array(), filemtime( get_template_directory() . '/styles/cart.css'));
         }
     
     }
