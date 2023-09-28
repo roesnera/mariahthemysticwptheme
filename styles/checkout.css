@@ -1,0 +1,11 @@
+button.button.alt#place_order[name="woocommerce_checkout_place_order"] {
+    color: black;
+    background: url("../assets/images/button_border.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#customer_details > div:nth-child(1) > div > h3, #ship-to-different-address > label > span, #order-review-heading {
+    font-family: var(--font-secondary);
+}

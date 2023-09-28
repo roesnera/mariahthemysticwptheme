@@ -31,6 +31,8 @@ html,
   --lr-gutter: 4rem;
   --pink: #ddb4b8;
   --green: #757d4b;
+  --font-primary: "Beth Ellen";
+  --font-secondary: "Lacquer";
 }
 
 body {
@@ -40,13 +42,13 @@ body {
   top: 0;
   transform: translateX(-50%);
   max-width: 100rem;
-  font-family: "Lacquer", sans-serif;
+  font-family: var(--font-secondary), sans-serif;
 }
 
 /* UTILITIES */
 
 .section--heading {
-  font-family: "Beth Ellen";
+  font-family: var(--font-primary);
   font-size: 4rem;
   margin-bottom: 1.4rem;
 }
@@ -101,7 +103,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Beth Ellen";
+  font-family: var(--font-primary);
   padding: 0 var(--lr-gutter);
 }
 
@@ -227,7 +229,7 @@ nav {
   min-width: 15rem;
   max-width: 25rem;
   border: 1px;
-  font-family: "Lacquer";
+  font-family: var(--font-secondary);
   font-size: 1.6rem;
   color: #000;
   text-decoration: none;
@@ -267,11 +269,11 @@ nav {
 }
 
 .blog-preview--title {
-  font-family: "Beth Ellen";
+  font-family: var(--font-primary);
 }
 
 .blog-preview--date {
-  font-family: "Lacquer";
+  font-family: var(--font-secondary);
   margin-bottom: 1rem;
 }
 
@@ -314,7 +316,7 @@ nav {
 }
 
 .contact-form--container-left {
-  font-family: "Lacquer";
+  font-family: var(--font-secondary);
   font-size: var(--left-font-size);
 }
 
@@ -338,7 +340,7 @@ nav {
 }
 
 .contact--bundle__left {
-  font-family: "Lacquer", serif;
+  font-family: var(--font-secondary), serif;
   font-size: var(--left-font-size);
 }
 
@@ -398,7 +400,7 @@ nav {
 }
 
 .find--row {
-  font-family: "Lacquer", serif;
+  font-family: var(--font-secondary), serif;
   font-size: 4rem;
   text-decoration: none;
   color: #000;

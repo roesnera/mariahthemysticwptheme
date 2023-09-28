@@ -1,5 +1,5 @@
 main > h2 {
-    font-family: 'Beth Ellen', serif;
+    font-family: var(--font-primary), serif;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -88,7 +88,7 @@ td.product-price::before {
 }
 
 input.input-text.qty {
-    font-family: "Lacquer", sans-serif;
+    font-family: var(--font-secondary), sans-serif;
 }
 
 td.product-quantity {
@@ -118,5 +118,44 @@ input#coupon_code {
 }
 
 .cart_totals > h2 {
-    font-family: 'Lacquer', sans-serif;
+    font-family: var(--font-secondary), sans-serif;
+}
+
+
+a.checkout-button.button.alt.wc-forward {
+    color: black;
+    background: unset;
+    /* isolation: isolate; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* a.checkout-button.button.alt.wc-forward::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15em;
+    aspect-ratio: 3 / 1;
+    background: url("../assets/images/button_border.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow-y: visible;
+} */
+
+.checkout-button-isolation-container {
+    aspect-ratio: 3 / 1;
+    background: url("../assets/images/button_border.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 2rem;
 }

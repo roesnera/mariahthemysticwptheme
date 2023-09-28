@@ -16,6 +16,16 @@ a.woocommerce-product-gallery__trigger {
   border: 1px dashed black;
 }
 
+.secondary-product-images-wrapper {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-product-images-wrapper > * {
+  margin: 0 2rem;
+}
+
 /* body > div.pswp.pswp--supports-fs.pswp--open.pswp--notouch.pswp--css_animation.pswp--svg.pswp--animated-in.pswp--visible.pswp--has_mouse {
     position: absolute;
     width: 100vh; height:100vh; inset: 0;
@@ -113,54 +123,66 @@ section.related.products {
 }
 
 .products {
-  display: grid;
+  display: flex;
   row-gap: 1rem;
   list-style: none;
+  /* grid-template-columns: [start] 50% [midline] 50% [end]; */
+  justify-content: space-evenly;
+}
+
+li.product {
+  position: relative;
+  display: grid;
   grid-template-columns: [start] 50% [midline] 50% [end];
 }
 
+.woocommerce-LoopProduct-link {
+  grid-column-start: start;
+  grid-column-end: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* isolation: isolate; */
+  text-decoration: none;
+  color: black;
+}
 
+li > a > span.onsale {
+  position: absolute;
+  color: white;
+  top: 0.3rem;
+  left: 2.3rem;
+  font-size: 1.3em;
+  transform: rotateZ(-20deg);
+}
 
-li.product {
-    position: relative;
-    display: grid;
-    grid-template-columns: [start] 50% [midline] 50% [end];
-  }
-  
-  .woocommerce-LoopProduct-link {
-    grid-column-start: start;
-    grid-column-end: end;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* isolation: isolate; */
-    text-decoration: none;
-    color: black;
-  }
-  
-  li > a> span.onsale {
-    position: absolute;
-    color: white;
-    top: .3rem;
-    left: 2.3rem;
-    font-size: 1.3em;
-    transform: rotateZ(-20deg);
-  }
-  
-  li > a> span.onsale::before {
-    content: "";
-    /* border: 1px solid black; */
-    display: block;
-    position: absolute;
-    background: black;
-    z-index: -1;
-    width: 130%;
-    height: 100%;
-    transform: translateX(-10%);
-  }
-  
-  .product .button,
-  .add_to_cart_button,
-  .added_to_cart {
-    text-align: center;
-  }
+li > a > span.onsale::before {
+  content: "";
+  /* border: 1px solid black; */
+  display: block;
+  position: absolute;
+  background: black;
+  z-index: -1;
+  width: 130%;
+  height: 100%;
+  transform: translateX(-10%);
+}
+
+.product .button,
+.add_to_cart_button,
+.added_to_cart {
+  text-align: center;
+}
+
+/* .product-zoom-wrapper {
+  position: relative;
+}
+
+.pswp {
+  width: 100vw;
+  height: 100vh;
+} */
+
+/* .woocommerce-product-gallery__image > a {
+  display: none;
+} */
