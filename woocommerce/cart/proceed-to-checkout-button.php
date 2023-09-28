@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>">
-	<div class="checkout-button-isolation-container">
+	<div class="mariah-theme-button">
 		<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?>
 	</div>
 </a>

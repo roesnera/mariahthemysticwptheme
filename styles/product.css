@@ -42,7 +42,7 @@ a.woocommerce-product-gallery__trigger {
 }
 
 h1.product_title.entry-title {
-  font-family: "Lacquer", sans-serif;
+  font-family: var(--font-secondary), sans-serif;
   font-size: 3rem;
 }
 
@@ -63,13 +63,14 @@ input.qty {
   /* transform: translateX(10px); */
 }
 
-button.single_add_to_cart_button.button.alt {
-  all: unset;
-  font-family: "Beth Ellen", serif;
+button.mariah-theme-button {
+  /* all: unset; */
+  border: unset;
+  font-family: var(--font-primary), serif;
   font-size: 2rem;
-  padding: 0 0.6em 0.3em;
-  border: 1px solid black;
-  border-radius: 5px;
+  padding: 0 1em 0.3em;
+  display: inline-block;
+  /* align-self: center; */
 }
 
 button.single_add_to_cart_button.button.alt:hover {
